@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  min-height: 100vh;
+  background-color: grey;
+}
+
+#mode-icon {
+  font-size: 19px;
+  position: relative;
+  display: block;
+  color: rgba(255, 255, 255, 0.355);
+  top: 5%;
+  left: 8%;
+}
+
+#mode-icon:hover {
+  color: rgba(255, 255, 255, 0.615);
+  transition: all 1s ease-out;
+}
+
+
+.Parent {
+  position: fixed;
+  height: 400px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 25px;
+  overflow: hidden;
+  background-image: url("./anime.jpg");
+  background-size: cover;
+  background-position: center;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Parent::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  filter: blur(15px);
+  transform: scale(1.05);
+  z-index: 0;
+}
+
+.Parent > * {
+  position: relative;
+  z-index: 1;
+}
+
+#temp-data {
+  font-weight: 700;
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 68%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.212);
+}
+
+#long {
+  font-size: 9px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.355);
+  position: relative;
+  top: 27%;
+  left: 33%;
+}
+
+#alt {
+  font-size: 9px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.355);
+  position: relative;
+  top: 24%;
+  left: 54%;
+}
+
+
+#Temp {
+    font-size: 9px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.355);
+    position: absolute;
+    left: 50%;
+    top: 12.5%;
+    transform: translateX(-50%);
+}
+
+#div-1{
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.152);
+    height: 70px;
+    width: 90px;
+    border: 0.2px solid rgba(255, 255, 255, 0.164);
+    border-radius: 14px;
+    position: absolute;
+    bottom: 42%;
+    left: 2%;
+}
+
+#feels {
+  font-size: 7px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.261);
+  position: relative;
+  left: 9%;
+  top: 7%;
+}
+
+#feel-temp {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.259);
+  position: relative;
+  left: 4.5%;
+  top: 7%;
+}
+
+#def {
+  font-size: 6.1px;
+  font-weight: 1000;
+  color: rgba(255, 255, 255, 0.355);
+  position: relative;
+  top: 9%;
+  left: 4%;
+}
+
+
+#div-2{
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.152);
+    height: 70px;
+    width: 90px;
+    border: 0.2px solid rgba(255, 255, 255, 0.164);
+    border-radius: 14px;
+    position: absolute;
+    bottom: 42%;
+    left: 52%;
+}
+
+#air {
+  font-size: 7px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.261);
+  position: relative;
+  left: 9%;
+  top: 7%;
+}
+
+#air_p {
+  font-weight: 900;
+  font-size: 20px;
+  font-weight: 1000;
+  color: rgba(255, 255, 255, 0.355);
+  position: relative;
+  left: 12%;
+  top: 15%;
+}
+
+#air-def {
+  font-size: 6.7px;
+  font-weight: bold ;
+  color: rgba(255, 255, 255, 0.256);
+  position: relative;
+  top: 20%;
+  left: 6%;
+}
+
+#div-3{
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.152);
+    height: 70px;
+    width: 90px;
+    border: 0.2px solid rgba(255, 255, 255, 0.164);
+    border-radius: 14px;
+    position: absolute;
+    bottom: 20%;
+    left: 2%;
+}
+ 
+
+#time {
+  font-size: 7px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.391);
+  position: relative;
+  left: 9%;
+  top: 7%;
+}
+
+#time-def {
+  font-weight: 900;
+  font-size: 20px;
+  font-weight: 1000;
+  color: rgba(255, 255, 255, 0.355);
+  position: relative;
+  left: 5%;
+  top: 19%;
+}
+
+#time-zone {
+  font-weight: 900;
+  font-size: 13px;
+  font-weight: 1000;
+  color: rgba(255, 255, 255, 0.355);
+  position: relative;
+  left: 3%;
+  top: 22%;
+}
+
+
+#div-4{
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.152);
+    height: 70px;
+    width: 90px;
+    border: 0.2px solid rgba(255, 255, 255, 0.164);
+    border-radius: 14px;
+    position: absolute;
+    bottom: 20%;
+    left: 52%;
+}
+
+.notice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.152);
+  border: 0.2px solid rgba(255, 255, 255, 0.164);
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  position: relative;
+  bottom: -78.5%;
+  left: 25%;
+}
+
+#files {
+  color: white;
+  position: relative;
+  left: 14%;
+  font-size: 9px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.212);
+  text-decoration: none;
+}
+
+#files-icon {
+  color: rgba(255, 255, 255, 0.212);
+  position: relative;
+  left: -57%;
+  font-weight: 600;
+}
+
+#refresh-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.152);
+  border: 0.2px solid rgba(255, 255, 255, 0.164);
+  height: 37px;
+  width: 40px;
+  border-radius: 20px;
+  position: relative;
+  top: 69%;
+  left: 1.9%;
+  text-decoration: none;
+}
+
+#refresh-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.152);
+  border: 0.2px solid rgba(255, 255, 255, 0.164);
+  height: 37px;
+  width: 40px;
+  border-radius: 20px;
+  position: relative;
+  top: 59.1%;
+  left: 78%;
+}
+
+#refresh-icon-right {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.212);
+}
+
+#icon-left {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.212);
+}
